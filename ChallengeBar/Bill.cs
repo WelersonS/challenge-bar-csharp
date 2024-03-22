@@ -11,22 +11,22 @@ namespace ChallengeBar
 
         public double Cover()
         {
-            return this.Feeding() > 30.00 ? 0.0 : 4.00;
+            return Feeding() > 30.00 ? 0.0 : 4.00;
         }
         public double Feeding()
         {
-            return (this.beer * 5.00) + (this.barbecue * 7.00) + (this.softDrink * 3.00);
+            return (beer * 5.00) + (barbecue * 7.00) + (softDrink * 3.00);
         }
         public double Ticket()
         {
-            if (Char.ToUpper(this.gender) == 'M')
+            if (Char.ToUpper(gender) == 'M')
                 return 10.00;
             else
                 return 8.00;
         }
         public double Total()
         {
-            double total = this.Ticket() + this.Feeding() + this.Cover();
+            double total = Ticket() + Feeding() + Cover();
             return total;
         }
     }
