@@ -4,10 +4,6 @@ namespace ChallengeBar
 {
     class Bill
     {
-        public static double BeerValue = 5.00;
-        public static double BarbecueValue = 7.00;
-        public static double SoftDrinkValue = 3.00;
-
         public char gender;
         public int beer;
         public int barbecue;
@@ -19,7 +15,7 @@ namespace ChallengeBar
         }
         public double Feeding()
         {
-            return (this.beer * BeerValue) + (this.barbecue * BarbecueValue ) + (this.softDrink * SoftDrinkValue);
+            return (this.beer * 5.00) + (this.barbecue * 7.00) + (this.softDrink * 3.00);
         }
         public double Ticket()
         {
